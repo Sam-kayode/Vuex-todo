@@ -1,22 +1,18 @@
-//   import axios from 'axios'
+import axios from 'axios'
 
 const state = {
-todos:[
-    {
-        "id": 1,
-        "title": "delectus aut autem",
-      },
-      {
-        "id": 2,
-        "title": "quis ut nam facilis et officia qui",
-      },
-]
+todos:[]
 
 };
 
 const getters = {allTodos:(state)=>state.todos};
 
-const actions = {};
+const actions = {
+  async fetchTodos(){
+    const response =await axios.get('https://jsonplaceholder.typicode.com/todos')
+    console.log(response)
+  }
+};
 
 const mutations = {};
 
