@@ -14,15 +14,17 @@ import { mapGetters, mapActions } from "vuex";
 
 export default {
   name: "Todos",
-  methods:{
-    
+  methods: {
+    ...mapActions(["fetchTodos"]),
   },
   computed: mapGetters(["allTodos"]),
+  created() {
+    this.fetchTodos();
+  },
 };
 </script>
 
 <style scoped>
-
 .todos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
