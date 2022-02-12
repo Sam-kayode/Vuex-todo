@@ -14,7 +14,7 @@ todos:[
 
 };
 
-const getters = {};
+const getters = {allTodos:(state)=>state.todos};
 
 const actions = {};
 
