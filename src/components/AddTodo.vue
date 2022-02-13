@@ -11,7 +11,13 @@
 </template>
 
 <script>
-export default {};
+import {mapActions} from 'vuex';
+export default {
+  name:'AddTodo',
+  mehods:{
+    ...mapActions(['addTodo'])
+  }
+};
 </script>
 
 <style scoped>
@@ -19,6 +25,7 @@ export default {};
 form {
   display: flex;
 }
+
 input[type="text"] {
   flex: 10;
   padding: 10px;
