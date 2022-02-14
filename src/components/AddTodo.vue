@@ -21,8 +21,8 @@ export default {
   },
   methods: {
     ...mapActions(["addTodo"]),
-    onSubmit(){
-      // e.preventDefault();
+    onSubmit(e){
+      e.preventDefault();
       this.addTodo(this.title)
     }
   },
