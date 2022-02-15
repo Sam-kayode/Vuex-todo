@@ -52,7 +52,7 @@ i {
   margin-bottom: 1rem;
 }
 .complete-box {
-  display: inline-block;
+  display: inline-block !important;
   width: 10px;
   height: 10px;
   background: #35495e;
