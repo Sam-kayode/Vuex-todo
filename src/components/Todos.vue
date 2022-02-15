@@ -64,7 +64,7 @@ i {
   background: #41b883;
 }
 .is-complete {
-  background: #35495e;
+  background: #2c3d4e;
   color: #fff;
 }
 @media (max-width: 500px) {
