@@ -72,4 +72,9 @@ i {
     grid-template-columns: 1fr;
   }
 }
+@media (max-width: 300px) {
+  .todos {
+    grid-template-columns: 1fr;
+  }
+}
 </style>
